@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:testapp/widgets/seat.dart';
 
 class SeatRow extends StatelessWidget {
@@ -11,11 +12,11 @@ class SeatRow extends StatelessWidget {
 
     children: [
       Seat(),
-      SizedBox(width: 10,),
+      SizedBox(width: 10.w,),
       Seat(),
       Spacer(),
       Seat(),
-      SizedBox(width: 10,),
+      SizedBox(width: 10.w,),
       Seat(),
 
     ],);

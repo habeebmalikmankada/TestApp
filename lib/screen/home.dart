@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:testapp/assets/images/images.dart';
 import 'package:testapp/screen/busManageScreen.dart';
 import 'package:testapp/widgets/busTile.dart';
@@ -9,12 +10,14 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return Scaffold(
       body: Column(
         children: [
           Container(
             width: double.infinity,
-            height: 120,
+            height: 120.h,
             color: Colors.black,
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -24,21 +27,21 @@ class Home extends StatelessWidget {
                   'moove',
                   style: TextStyle(
                       color: Colors.white,
-                      fontSize: 33,
+                      fontSize: 33.sp,
                       fontWeight: FontWeight.bold),
                 ),
                 Text(
                   'be',
                   style: TextStyle(
                       color: Colors.yellow,
-                      fontSize: 33,
+                      fontSize: 33.sp,
                       fontWeight: FontWeight.bold),
                 ),
               ],
             ),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(vertical: 20, horizontal: 10),
+            padding: EdgeInsets.symmetric(vertical: 20.h, horizontal: 10.w),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
@@ -58,16 +61,16 @@ class Home extends StatelessWidget {
           Align(
             alignment: Alignment.centerLeft,
             child: Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 10.h),
                 child: Text(
                   '21 Buses Found',
-                  style: TextStyle(color: Colors.black54, fontSize: 12),
+                  style: TextStyle(color: Colors.black54, fontSize: 12.sp),
                 )),
           ),
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 20, ),
+            padding: EdgeInsets.symmetric(horizontal: 20.w, ),
             child: SizedBox(
-              height: 373,
+              height: 373.h,
               child: ListView.builder(shrinkWrap: true,
 
                 itemCount: 5,
